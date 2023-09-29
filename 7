@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+
+main(){
+float n1, n2, n3, mp, mediageral = 0;
+int totalaluno;
+
+while(totalaluno < 30){
+    printf("digite as notas 1, 2 e 3\n");
+    scanf("%f %f %f", &n1, &n2, &n3);
+    totalaluno++;
+    mp = ((n1*2 + n2*4 + n3*3)/ 10);
+    printf("media total dos alunos %.2f", mp);
+    mediageral +=mp;
+}
+mediageral/=30;
+printf("media geral da turma:%.2f", mediageral);
+
+if (mp >= 7){
+    printf("aprovado");
+}else{
+    printf("reprovado");
+}
+
+}
