@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include <math.h>
+
+main(){
+ float x, y;
+ printf("digite os valores de x e y");
+ scanf("%f %f", &x, &y);
+
+ if(x== 0 && y == 0){
+    printf("origem\n");
+ }else if(x == 0){
+    printf("eixo x\n");
+ }else {
+    if (x> 0){
+        if(y> 0){
+            printf("pertence ao q1\n");
+        }else {
+            printf("pertence ao q4\n");
+        }
+    }else {
+        if (y > 0){
+            printf("percence ao q2\n");
+        }else{
+            printf("pertence ao q3\n");
+        }
+    }
+ }
+
+}
