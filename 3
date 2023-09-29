@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+main(){
+ int A,B, C;
+
+ printf("digite os valores\n");
+ scanf("%d %d %d", &A, &B, &C);
+
+ if(A+B>= C && A+C>= B && B+C>=A){
+    printf("pode ser formado um triangulo\n");
+
+    }else{
+      printf("nao pode ser formado um triangulo\n");
+    }
+
+ if(A == B && B == C){
+    printf("o triangulo e equilatero\n");
+ }
+
+ else if((A == B || A == C ||  B == C) ){
+    printf("o triangulo e isoceles\n");
+
+ }else if(A != B && A!=C && B!= A && B!=C && C != A && C != B){
+   printf("o triangulo e escaleno\n");
+ }
+
+}
